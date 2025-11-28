@@ -1,9 +1,11 @@
 import { ScrollView, Text, View } from "react-native";
 import React, { useState } from 'react';
-import PigCard from './components/PigCard';
-import StatCard from './components/StatCard';
-import DetailModal from './components/DetailModal';
-import { appStyles } from './styles/appStyles';
+import PigCard from '../components/PigCard';
+import StatCard from '../components/StatCard';
+import DetailModal from '../components/DetailModal';
+import { appStyles } from '../styles/appStyles';
+import {blemanager} from 'react-native-ble-plx';
+import { Base64 } from "react-native-base64";
 
 const OVERALL_DATA = {
     healthScore: 94,

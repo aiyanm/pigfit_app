@@ -25,7 +25,7 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
+    "plugins":[
       "expo-router",
       [
         "expo-splash-screen",
@@ -38,11 +38,27 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "react-native-ble-plx"
+      ],
+      [
+        "react-native-permissions",
+        {
+          "permissions": [
+            "android.permission.BLUETOOTH_SCAN",
+            "android.permission.BLUETOOTH_CONNECT",
+            "android.permission.ACCESS_FINE_LOCATION"
+          ]
+        }
+      ],
+      [
+        "react-native-base64"
       ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
+    ]
+  },
+  "experiments": {
+    "typedRoutes": true,
+    "reactCompiler": true
   }
 }
